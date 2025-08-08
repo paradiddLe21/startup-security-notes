@@ -1,3 +1,24 @@
 #System Mapping
 
 This file includes technical and security observations based on the current architecture.
+
+# System Mapping
+
+## [Auth System]
+- Login var (JWT / OAuth 2.0 hedeflenmiş)
+- MFA istenmiş (Google/Microsoft Authenticator)
+- Şifreler nasıl tutuluyor? → TBD
+
+## [API]
+- API güvenliği hedeflenmiş (OAuth 2.0, CSP, input validation)
+- WAF kurulumu 08.08 tarihli
+- API endpointleri listesi yok → istenecek
+
+## [Data Protection]
+- Veeam / Acronis ile yedekleme önerilmiş
+- RTO / RPO tanımları yazılmış, ama doküman yok
+
+## [Employee Devices]
+- Antivirüs: ESET32 önerilmiş
+- BitLocker + VeraCrypt hedeflenmiş
+- Şifreleme olup olmadığı kontrol edilecek
